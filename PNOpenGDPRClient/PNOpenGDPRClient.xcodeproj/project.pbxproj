@@ -14,6 +14,7 @@
 		5A84491620B6E54B00132D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */; };
 		5A84491920B6E54B00132D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84491820B6E54B00132D32 /* main.m */; };
 		5A84492420B6E81D00132D32 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492320B6E81D00132D32 /* BaseModel.m */; };
+		5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492720B6E95100132D32 /* IdentityFormat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5A84491820B6E54B00132D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A84492220B6E81D00132D32 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		5A84492320B6E81D00132D32 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		5A84492620B6E95100132D32 /* IdentityFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityFormat.h; sourceTree = "<group>"; };
+		5A84492720B6E95100132D32 /* IdentityFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityFormat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				5A84492220B6E81D00132D32 /* BaseModel.h */,
 				5A84492320B6E81D00132D32 /* BaseModel.m */,
+				5A84492620B6E95100132D32 /* IdentityFormat.h */,
+				5A84492720B6E95100132D32 /* IdentityFormat.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
+				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
