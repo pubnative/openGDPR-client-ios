@@ -20,30 +20,30 @@
 //  THE SOFTWARE.
 //
 
-#import "DiscoveryResponseModel.h"
+#import "OpenGDPRResponseModel.h"
 
-@implementation DiscoveryResponseModel
+@implementation OpenGDPRResponseModel
 
 - (void)dealloc
 {
-    self.apiVersion = nil;
-    self.supportedIdentities = nil;
-    self.supportedSubjectRequestTypes = nil;
-    self.processorCertificate = nil;
+    self.controllerID = nil;
+    self.expectedCompletionTime = nil;
+    self.receivedTime = nil;
+    self.encodedRequest = nil;
+    self.subjectRequestID = nil;
 }
-
 #pragma mark BaseModel
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super initWithDictionary:dictionary];
     if (self) {
-        self.apiVersion = dictionary[@"api_version"];
-        self.supportedIdentities = [DiscoveryIdentityModel parseArrayValues:dictionary[@"supported_identities"]];
-        self.supportedSubjectRequestTypes = dictionary[@"supported_subject_request_types"];
-        self.processorCertificate = dictionary[@"processor_certificate"];
+        self.controllerID = dictionary[@"controller_id"];
+        self.expectedCompletionTime = dictionary[@"expected_completion_time"];
+        self.receivedTime = dictionary[@"received_time"];
+        self.encodedRequest = dictionary[@"encoded_request"];
+        self.subjectRequestID = dictionary[@"subject_request_id"];
     }
     return self;
 }
-
 @end
