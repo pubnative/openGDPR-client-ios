@@ -30,6 +30,7 @@
 		5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */; };
 		5A84495320B7186900132D32 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495220B7186900132D32 /* CryptoUtil.m */; };
 		5A84495B20B719D300132D32 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495A20B719D300132D32 /* DateUtil.m */; };
+		5A84495F20B71BA600132D32 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495E20B71BA600132D32 /* Logger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		5A84495220B7186900132D32 /* CryptoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoUtil.m; sourceTree = "<group>"; };
 		5A84495920B719D300132D32 /* DateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		5A84495A20B719D300132D32 /* DateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		5A84495D20B71BA600132D32 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		5A84495E20B71BA600132D32 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,7 @@
 		5A84495520B7195800132D32 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				5A84496020B71C2400132D32 /* Logger */,
 				5A84495420B7194A00132D32 /* Crypto */,
 				5A84495C20B719D900132D32 /* Date */,
 			);
@@ -194,6 +198,15 @@
 				5A84495A20B719D300132D32 /* DateUtil.m */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		5A84496020B71C2400132D32 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				5A84495D20B71BA600132D32 /* Logger.h */,
+				5A84495E20B71BA600132D32 /* Logger.m */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 				5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */,
 				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
+				5A84495F20B71BA600132D32 /* Logger.m in Sources */,
 				5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */,
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
