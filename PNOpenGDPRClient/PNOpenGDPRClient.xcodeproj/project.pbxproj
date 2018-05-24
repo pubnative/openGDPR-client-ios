@@ -80,6 +80,7 @@
 		5A84495A20B719D300132D32 /* DateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		5A84495D20B71BA600132D32 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		5A84495E20B71BA600132D32 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRAPIResponseDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +188,7 @@
 				5A84496020B71C2400132D32 /* Logger */,
 				5A84495420B7194A00132D32 /* Crypto */,
 				5A84495C20B719D900132D32 /* Date */,
+				5A84496420B71EF000132D32 /* API Response Delegate */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -207,6 +209,14 @@
 				5A84495E20B71BA600132D32 /* Logger.m */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		5A84496420B71EF000132D32 /* API Response Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */,
+			);
+			path = "API Response Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

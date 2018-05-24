@@ -22,8 +22,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DateUtil : NSObject
+@protocol OpenGDPRAPIResponseDelegate <NSObject>
 
-+ (NSString *)RFC3339DateStringWithDate:(NSDate *)date;
+- (void)success:(NSObject *)model;
+- (void)fail:(NSError *)error;
 
 @end
