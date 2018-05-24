@@ -107,7 +107,7 @@
 				5A84490A20B6E54600132D32 /* AppDelegate.m */,
 				5A84490C20B6E54600132D32 /* ViewController.h */,
 				5A84490D20B6E54600132D32 /* ViewController.m */,
-				5A84492520B6E82400132D32 /* Model */,
+				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
@@ -152,6 +152,14 @@
 				5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5A84495020B714FB00132D32 /* Open GDPR Client */ = {
+			isa = PBXGroup;
+			children = (
+				5A84492520B6E82400132D32 /* Model */,
+			);
+			path = "Open GDPR Client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
