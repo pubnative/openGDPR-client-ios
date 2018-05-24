@@ -19,6 +19,7 @@
 		5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492D20B6ECBD00132D32 /* RequestType.m */; };
 		5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */; };
 		5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */; };
+		5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRStatus.m; sourceTree = "<group>"; };
 		5A84493220B6F01C00132D32 /* DiscoveryIdentityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryIdentityModel.h; sourceTree = "<group>"; };
 		5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryIdentityModel.m; sourceTree = "<group>"; };
+		5A84493520B6F22400132D32 /* DiscoveryResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryResponseModel.h; sourceTree = "<group>"; };
+		5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */,
 				5A84493220B6F01C00132D32 /* DiscoveryIdentityModel.h */,
 				5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */,
+				5A84493520B6F22400132D32 /* DiscoveryResponseModel.h */,
+				5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
 				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
 				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
+				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
 				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 				5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */,
 			);
