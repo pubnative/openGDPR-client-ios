@@ -17,6 +17,7 @@
 		5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492720B6E95100132D32 /* IdentityFormat.m */; };
 		5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492A20B6EABB00132D32 /* IdentityType.m */; };
 		5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492D20B6ECBD00132D32 /* RequestType.m */; };
+		5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		5A84492A20B6EABB00132D32 /* IdentityType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityType.m; sourceTree = "<group>"; };
 		5A84492C20B6ECBD00132D32 /* RequestType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestType.h; sourceTree = "<group>"; };
 		5A84492D20B6ECBD00132D32 /* RequestType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestType.m; sourceTree = "<group>"; };
+		5A84492F20B6ED9400132D32 /* OpenGDPRStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRStatus.h; sourceTree = "<group>"; };
+		5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				5A84492A20B6EABB00132D32 /* IdentityType.m */,
 				5A84492C20B6ECBD00132D32 /* RequestType.h */,
 				5A84492D20B6ECBD00132D32 /* RequestType.m */,
+				5A84492F20B6ED9400132D32 /* OpenGDPRStatus.h */,
+				5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
 				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
+				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
 				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
