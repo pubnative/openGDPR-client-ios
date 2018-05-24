@@ -13,6 +13,21 @@
 		5A84491320B6E54B00132D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84491220B6E54B00132D32 /* Assets.xcassets */; };
 		5A84491620B6E54B00132D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */; };
 		5A84491920B6E54B00132D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84491820B6E54B00132D32 /* main.m */; };
+		5A84492420B6E81D00132D32 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492320B6E81D00132D32 /* BaseModel.m */; };
+		5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492720B6E95100132D32 /* IdentityFormat.m */; };
+		5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492A20B6EABB00132D32 /* IdentityType.m */; };
+		5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492D20B6ECBD00132D32 /* RequestType.m */; };
+		5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */; };
+		5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */; };
+		5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */; };
+		5A84493A20B6F8E200132D32 /* ErrorItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493920B6F8E200132D32 /* ErrorItemModel.m */; };
+		5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493C20B6FA8800132D32 /* ErrorModel.m */; };
+		5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */; };
+		5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494220B6FF5500132D32 /* RequestIdentityModel.m */; };
+		5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494520B7009F00132D32 /* StatusResponseModel.m */; };
+		5A84494920B7031B00132D32 /* OpenGDPRRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494820B7031B00132D32 /* OpenGDPRRequestModel.m */; };
+		5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494B20B7070F00132D32 /* OpenGDPRResponseModel.m */; };
+		5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +41,36 @@
 		5A84491520B6E54B00132D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A84491720B6E54B00132D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A84491820B6E54B00132D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A84492220B6E81D00132D32 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		5A84492320B6E81D00132D32 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		5A84492620B6E95100132D32 /* IdentityFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityFormat.h; sourceTree = "<group>"; };
+		5A84492720B6E95100132D32 /* IdentityFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityFormat.m; sourceTree = "<group>"; };
+		5A84492920B6EABB00132D32 /* IdentityType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityType.h; sourceTree = "<group>"; };
+		5A84492A20B6EABB00132D32 /* IdentityType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityType.m; sourceTree = "<group>"; };
+		5A84492C20B6ECBD00132D32 /* RequestType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestType.h; sourceTree = "<group>"; };
+		5A84492D20B6ECBD00132D32 /* RequestType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestType.m; sourceTree = "<group>"; };
+		5A84492F20B6ED9400132D32 /* OpenGDPRStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRStatus.h; sourceTree = "<group>"; };
+		5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRStatus.m; sourceTree = "<group>"; };
+		5A84493220B6F01C00132D32 /* DiscoveryIdentityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryIdentityModel.h; sourceTree = "<group>"; };
+		5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryIdentityModel.m; sourceTree = "<group>"; };
+		5A84493520B6F22400132D32 /* DiscoveryResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryResponseModel.h; sourceTree = "<group>"; };
+		5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryResponseModel.m; sourceTree = "<group>"; };
+		5A84493820B6F8E200132D32 /* ErrorItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorItemModel.h; sourceTree = "<group>"; };
+		5A84493920B6F8E200132D32 /* ErrorItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorItemModel.m; sourceTree = "<group>"; };
+		5A84493B20B6FA8800132D32 /* ErrorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorModel.h; sourceTree = "<group>"; };
+		5A84493C20B6FA8800132D32 /* ErrorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorModel.m; sourceTree = "<group>"; };
+		5A84493E20B6FBBE00132D32 /* CancellationResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancellationResponseModel.h; sourceTree = "<group>"; };
+		5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancellationResponseModel.m; sourceTree = "<group>"; };
+		5A84494120B6FF5500132D32 /* RequestIdentityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestIdentityModel.h; sourceTree = "<group>"; };
+		5A84494220B6FF5500132D32 /* RequestIdentityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestIdentityModel.m; sourceTree = "<group>"; };
+		5A84494420B7009F00132D32 /* StatusResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusResponseModel.h; sourceTree = "<group>"; };
+		5A84494520B7009F00132D32 /* StatusResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusResponseModel.m; sourceTree = "<group>"; };
+		5A84494720B7031B00132D32 /* OpenGDPRRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRRequestModel.h; sourceTree = "<group>"; };
+		5A84494820B7031B00132D32 /* OpenGDPRRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRRequestModel.m; sourceTree = "<group>"; };
+		5A84494A20B7070F00132D32 /* OpenGDPRResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRResponseModel.h; sourceTree = "<group>"; };
+		5A84494B20B7070F00132D32 /* OpenGDPRResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRResponseModel.m; sourceTree = "<group>"; };
+		5A84494D20B7092E00132D32 /* OpenGDPRErrorResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRErrorResponseModel.h; sourceTree = "<group>"; };
+		5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRErrorResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +107,7 @@
 				5A84490A20B6E54600132D32 /* AppDelegate.m */,
 				5A84490C20B6E54600132D32 /* ViewController.h */,
 				5A84490D20B6E54600132D32 /* ViewController.m */,
+				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
@@ -69,6 +115,51 @@
 				5A84491820B6E54B00132D32 /* main.m */,
 			);
 			path = PNOpenGDPRClient;
+			sourceTree = "<group>";
+		};
+		5A84492520B6E82400132D32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A84492220B6E81D00132D32 /* BaseModel.h */,
+				5A84492320B6E81D00132D32 /* BaseModel.m */,
+				5A84492620B6E95100132D32 /* IdentityFormat.h */,
+				5A84492720B6E95100132D32 /* IdentityFormat.m */,
+				5A84492920B6EABB00132D32 /* IdentityType.h */,
+				5A84492A20B6EABB00132D32 /* IdentityType.m */,
+				5A84492C20B6ECBD00132D32 /* RequestType.h */,
+				5A84492D20B6ECBD00132D32 /* RequestType.m */,
+				5A84492F20B6ED9400132D32 /* OpenGDPRStatus.h */,
+				5A84493020B6ED9400132D32 /* OpenGDPRStatus.m */,
+				5A84493220B6F01C00132D32 /* DiscoveryIdentityModel.h */,
+				5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */,
+				5A84493520B6F22400132D32 /* DiscoveryResponseModel.h */,
+				5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */,
+				5A84493820B6F8E200132D32 /* ErrorItemModel.h */,
+				5A84493920B6F8E200132D32 /* ErrorItemModel.m */,
+				5A84493B20B6FA8800132D32 /* ErrorModel.h */,
+				5A84493C20B6FA8800132D32 /* ErrorModel.m */,
+				5A84493E20B6FBBE00132D32 /* CancellationResponseModel.h */,
+				5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */,
+				5A84494120B6FF5500132D32 /* RequestIdentityModel.h */,
+				5A84494220B6FF5500132D32 /* RequestIdentityModel.m */,
+				5A84494420B7009F00132D32 /* StatusResponseModel.h */,
+				5A84494520B7009F00132D32 /* StatusResponseModel.m */,
+				5A84494720B7031B00132D32 /* OpenGDPRRequestModel.h */,
+				5A84494820B7031B00132D32 /* OpenGDPRRequestModel.m */,
+				5A84494A20B7070F00132D32 /* OpenGDPRResponseModel.h */,
+				5A84494B20B7070F00132D32 /* OpenGDPRResponseModel.m */,
+				5A84494D20B7092E00132D32 /* OpenGDPRErrorResponseModel.h */,
+				5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A84495020B714FB00132D32 /* Open GDPR Client */ = {
+			isa = PBXGroup;
+			children = (
+				5A84492520B6E82400132D32 /* Model */,
+			);
+			path = "Open GDPR Client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +232,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */,
+				5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */,
+				5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */,
 				5A84490E20B6E54600132D32 /* ViewController.m in Sources */,
+				5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */,
+				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
+				5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */,
+				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
+				5A84493A20B6F8E200132D32 /* ErrorItemModel.m in Sources */,
+				5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */,
+				5A84494920B7031B00132D32 /* OpenGDPRRequestModel.m in Sources */,
+				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
+				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
+				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
+				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
+				5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
