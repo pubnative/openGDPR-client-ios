@@ -20,26 +20,13 @@
 //  THE SOFTWARE.
 //
 
-#import "DiscoveryIdentityModel.h"
+#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-@implementation DiscoveryIdentityModel
+@interface ErrorItemModel : BaseModel
 
-- (void)dealloc
-{
-    self.identityType = nil;
-    self.identityFormat = nil;
-}
-
-#pragma mark BaseModel
-
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-{
-    self = [super initWithDictionary:dictionary];
-    if (self) {
-        self.identityType = dictionary[@"identity_type"];
-        self.identityFormat = dictionary[@"identity_format"];
-    }
-    return self;
-}
+@property (nonatomic, strong) NSString *domain;
+@property (nonatomic, strong) NSString *reason;
+@property (nonatomic, strong) NSString *message;
 
 @end

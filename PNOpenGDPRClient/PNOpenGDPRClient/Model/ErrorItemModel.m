@@ -20,14 +20,15 @@
 //  THE SOFTWARE.
 //
 
-#import "DiscoveryIdentityModel.h"
+#import "ErrorItemModel.h"
 
-@implementation DiscoveryIdentityModel
+@implementation ErrorItemModel
 
 - (void)dealloc
 {
-    self.identityType = nil;
-    self.identityFormat = nil;
+    self.domain = nil;
+    self.reason = nil;
+    self.message = nil;
 }
 
 #pragma mark BaseModel
@@ -36,8 +37,9 @@
 {
     self = [super initWithDictionary:dictionary];
     if (self) {
-        self.identityType = dictionary[@"identity_type"];
-        self.identityFormat = dictionary[@"identity_format"];
+        self.domain = dictionary[@"domain"];
+        self.reason = dictionary[@"reason"];
+        self.message = dictionary[@"message"];
     }
     return self;
 }
