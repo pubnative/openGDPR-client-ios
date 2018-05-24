@@ -20,15 +20,29 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "BaseModel.h"
-#import "DiscoveryIdentityModel.h"
+#import "OpenGDPRRequestModel.h"
 
-@interface DiscoveryResponseModel : BaseModel
+@implementation OpenGDPRRequestModel
 
-@property (nonatomic, strong) NSString *apiVersion;
-@property (nonatomic, strong) NSArray<DiscoveryIdentityModel*> *supportedIdentities;
-@property (nonatomic, strong) NSArray<NSString*> *supportedSubjectRequestTypes;
-@property (nonatomic, strong) NSString *processorCertificate;
+- (void)dealloc
+{
+    self.subjectRequestID = nil;
+    self.subjectRequestType = nil;
+    self.subjectIdentities = nil;
+    self.submittedTime = nil;
+    self.apiVersion = nil;
+    self.statusCallbackUrls = nil;
+    self.extensions = nil;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.subjectIdentities = [NSArray new];
+        self.statusCallbackUrls = [NSArray new];
+    }
+    return self;
+}
 
 @end

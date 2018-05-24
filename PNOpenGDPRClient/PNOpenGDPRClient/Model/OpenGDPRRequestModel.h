@@ -21,14 +21,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseModel.h"
-#import "DiscoveryIdentityModel.h"
+#import "RequestIdentityModel.h"
 
-@interface DiscoveryResponseModel : BaseModel
+@interface OpenGDPRRequestModel : NSObject
 
+@property (nonatomic, strong) NSString *subjectRequestID;
+@property (nonatomic, strong) NSString *subjectRequestType;
+@property (nonatomic, strong) NSArray<RequestIdentityModel*> *subjectIdentities;
+@property (nonatomic, strong) NSString *submittedTime;
 @property (nonatomic, strong) NSString *apiVersion;
-@property (nonatomic, strong) NSArray<DiscoveryIdentityModel*> *supportedIdentities;
-@property (nonatomic, strong) NSArray<NSString*> *supportedSubjectRequestTypes;
-@property (nonatomic, strong) NSString *processorCertificate;
+@property (nonatomic, strong) NSArray<NSString*> *statusCallbackUrls;
+@property (nonatomic, strong) NSString *extensions;
 
 @end
