@@ -31,6 +31,7 @@
 		5A84495320B7186900132D32 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495220B7186900132D32 /* CryptoUtil.m */; };
 		5A84495B20B719D300132D32 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495A20B719D300132D32 /* DateUtil.m */; };
 		5A84495F20B71BA600132D32 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495E20B71BA600132D32 /* Logger.m */; };
+		5A84496820B7234A00132D32 /* UrlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84496720B7234A00132D32 /* UrlUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,8 @@
 		5A84495D20B71BA600132D32 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		5A84495E20B71BA600132D32 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRAPIResponseDelegate.h; sourceTree = "<group>"; };
+		5A84496620B7234A00132D32 /* UrlUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlUtil.h; sourceTree = "<group>"; };
+		5A84496720B7234A00132D32 /* UrlUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,7 @@
 				5A84495420B7194A00132D32 /* Crypto */,
 				5A84495C20B719D900132D32 /* Date */,
 				5A84496420B71EF000132D32 /* API Response Delegate */,
+				5A84496920B7235000132D32 /* URL */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -217,6 +221,15 @@
 				5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */,
 			);
 			path = "API Response Delegate";
+			sourceTree = "<group>";
+		};
+		5A84496920B7235000132D32 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				5A84496620B7234A00132D32 /* UrlUtil.h */,
+				5A84496720B7234A00132D32 /* UrlUtil.m */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +321,7 @@
 				5A84495320B7186900132D32 /* CryptoUtil.m in Sources */,
 				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
 				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
+				5A84496820B7234A00132D32 /* UrlUtil.m in Sources */,
 				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 				5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */,
 			);
