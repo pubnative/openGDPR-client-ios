@@ -21,6 +21,7 @@
 		5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493320B6F01C00132D32 /* DiscoveryIdentityModel.m */; };
 		5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */; };
 		5A84493A20B6F8E200132D32 /* ErrorItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493920B6F8E200132D32 /* ErrorItemModel.m */; };
+		5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493C20B6FA8800132D32 /* ErrorModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryResponseModel.m; sourceTree = "<group>"; };
 		5A84493820B6F8E200132D32 /* ErrorItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorItemModel.h; sourceTree = "<group>"; };
 		5A84493920B6F8E200132D32 /* ErrorItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorItemModel.m; sourceTree = "<group>"; };
+		5A84493B20B6FA8800132D32 /* ErrorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorModel.h; sourceTree = "<group>"; };
+		5A84493C20B6FA8800132D32 /* ErrorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				5A84493620B6F22400132D32 /* DiscoveryResponseModel.m */,
 				5A84493820B6F8E200132D32 /* ErrorItemModel.h */,
 				5A84493920B6F8E200132D32 /* ErrorItemModel.m */,
+				5A84493B20B6FA8800132D32 /* ErrorModel.h */,
+				5A84493C20B6FA8800132D32 /* ErrorModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
 				5A84493A20B6F8E200132D32 /* ErrorItemModel.m in Sources */,
+				5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */,
 				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
 				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
 				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
