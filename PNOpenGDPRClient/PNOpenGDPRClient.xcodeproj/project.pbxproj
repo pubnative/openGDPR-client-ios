@@ -24,6 +24,7 @@
 		5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493C20B6FA8800132D32 /* ErrorModel.m */; };
 		5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */; };
 		5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494220B6FF5500132D32 /* RequestIdentityModel.m */; };
+		5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494520B7009F00132D32 /* StatusResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancellationResponseModel.m; sourceTree = "<group>"; };
 		5A84494120B6FF5500132D32 /* RequestIdentityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestIdentityModel.h; sourceTree = "<group>"; };
 		5A84494220B6FF5500132D32 /* RequestIdentityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestIdentityModel.m; sourceTree = "<group>"; };
+		5A84494420B7009F00132D32 /* StatusResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusResponseModel.h; sourceTree = "<group>"; };
+		5A84494520B7009F00132D32 /* StatusResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				5A84493F20B6FBBE00132D32 /* CancellationResponseModel.m */,
 				5A84494120B6FF5500132D32 /* RequestIdentityModel.h */,
 				5A84494220B6FF5500132D32 /* RequestIdentityModel.m */,
+				5A84494420B7009F00132D32 /* StatusResponseModel.h */,
+				5A84494520B7009F00132D32 /* StatusResponseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */,
 				5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */,
 				5A84490E20B6E54600132D32 /* ViewController.m in Sources */,
+				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
 				5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */,
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
