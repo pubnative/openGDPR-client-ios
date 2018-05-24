@@ -35,7 +35,7 @@
 {
     self = [super initWithDictionary:dictionary];
     if (self) {
-        self.error = dictionary[@"error"];
+        self.error = [[ErrorModel alloc] initWithDictionary:dictionary[@"error"]];
     }
     return self;
 }

@@ -31,17 +31,4 @@
     self.identityFormat = nil;
 }
 
-#pragma mark BaseModel
-
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-{
-    self = [super initWithDictionary:dictionary];
-    if (self) {
-        self.identityType = dictionary[@"identity_type"];
-        self.identityValue = dictionary[@"identity_value"];
-        self.identityFormat = dictionary[@"identity_format"];
-    }
-    return self;
-}
-
 @end

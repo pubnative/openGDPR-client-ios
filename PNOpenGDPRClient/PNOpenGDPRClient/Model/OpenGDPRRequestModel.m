@@ -35,14 +35,4 @@
     self.extensions = nil;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.subjectIdentities = [NSArray new];
-        self.statusCallbackUrls = [NSArray new];
-    }
-    return self;
-}
-
 @end

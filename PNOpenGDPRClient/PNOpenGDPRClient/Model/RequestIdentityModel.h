@@ -21,9 +21,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseModel.h"
 
-@interface RequestIdentityModel : BaseModel
+@interface RequestIdentityModel : NSObject
 
 @property (nonatomic, strong) NSString *identityType;
 @property (nonatomic, strong) NSString *identityValue;
