@@ -20,35 +20,12 @@
 //  THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+#import "BaseModel.h"
+#import "ErrorModel.h"
 
-#import "StatusResponseModel.h"
+@interface OpenGDPRErrorResponseModel : BaseModel
 
-@implementation StatusResponseModel
-
-- (void)dealloc
-{
-    self.controllerID = nil;
-    self.expectedCompletionTime = nil;
-    self.subjectRequestID = nil;
-    self.requestStatus = nil;
-    self.apiVersion = nil;
-    self.resultsUrl = nil;
-}
-
-#pragma mark BaseModel
-
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-{
-    self = [super initWithDictionary:dictionary];
-    if (self) {
-        self.controllerID = dictionary[@"controller_id"];
-        self.expectedCompletionTime = dictionary[@"expected_completion_time"];
-        self.subjectRequestID = dictionary[@"subject_request_id"];
-        self.requestStatus = dictionary[@"request_status"];
-        self.apiVersion = dictionary[@"api_version"];
-        self.resultsUrl = dictionary[@"results_url"];
-    }
-    return self;
-}
+@property (nonatomic, strong) ErrorModel *error;
 
 @end

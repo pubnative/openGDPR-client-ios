@@ -20,19 +20,13 @@
 //  THE SOFTWARE.
 //
 
+#import "OpenGDPRErrorResponseModel.h"
 
-#import "StatusResponseModel.h"
-
-@implementation StatusResponseModel
+@implementation OpenGDPRErrorResponseModel
 
 - (void)dealloc
 {
-    self.controllerID = nil;
-    self.expectedCompletionTime = nil;
-    self.subjectRequestID = nil;
-    self.requestStatus = nil;
-    self.apiVersion = nil;
-    self.resultsUrl = nil;
+    self.error = nil;
 }
 
 #pragma mark BaseModel
@@ -41,12 +35,7 @@
 {
     self = [super initWithDictionary:dictionary];
     if (self) {
-        self.controllerID = dictionary[@"controller_id"];
-        self.expectedCompletionTime = dictionary[@"expected_completion_time"];
-        self.subjectRequestID = dictionary[@"subject_request_id"];
-        self.requestStatus = dictionary[@"request_status"];
-        self.apiVersion = dictionary[@"api_version"];
-        self.resultsUrl = dictionary[@"results_url"];
+        self.error = dictionary[@"error"];
     }
     return self;
 }
