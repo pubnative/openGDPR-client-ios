@@ -15,6 +15,7 @@
 		5A84491920B6E54B00132D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84491820B6E54B00132D32 /* main.m */; };
 		5A84492420B6E81D00132D32 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492320B6E81D00132D32 /* BaseModel.m */; };
 		5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492720B6E95100132D32 /* IdentityFormat.m */; };
+		5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84492A20B6EABB00132D32 /* IdentityType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5A84492320B6E81D00132D32 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		5A84492620B6E95100132D32 /* IdentityFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityFormat.h; sourceTree = "<group>"; };
 		5A84492720B6E95100132D32 /* IdentityFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityFormat.m; sourceTree = "<group>"; };
+		5A84492920B6EABB00132D32 /* IdentityType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentityType.h; sourceTree = "<group>"; };
+		5A84492A20B6EABB00132D32 /* IdentityType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentityType.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				5A84492320B6E81D00132D32 /* BaseModel.m */,
 				5A84492620B6E95100132D32 /* IdentityFormat.h */,
 				5A84492720B6E95100132D32 /* IdentityFormat.m */,
+				5A84492920B6EABB00132D32 /* IdentityType.h */,
+				5A84492A20B6EABB00132D32 /* IdentityType.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
 				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
+				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
