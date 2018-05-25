@@ -19,12 +19,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-
 #import <Foundation/Foundation.h>
 
-@protocol OpenGDPRAPIResponseDelegate <NSObject>
+@interface OpenGDPREndpoints : NSObject
 
-- (void)success:(NSObject *)model;
-- (void)fail:(NSError *)error;
++ (NSString *)apiVersion;
++ (NSString *)discoveryEndpoint;
++ (NSString *)requestEndpoint;
++ (NSString *)statusUrlWithRequestID:(NSString *)requestID;
++ (NSString *)cancellationEndpointWithRequestID:(NSString *)requestID;
 
 @end
