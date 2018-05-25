@@ -21,10 +21,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CancellationResponseModel.h"
 
-@protocol OpenGDPRAPIResponseDelegate <NSObject>
+@protocol OpenGDPRCancellationDelegate <NSObject>
 
-- (void)success:(NSObject *)model;
+- (void)success:(CancellationResponseModel *)model;
 - (void)fail:(NSError *)error;
+
+@end
+
+@interface OpenGDPRCancellationClient : NSObject
+
+- (void)doCancellationRequestWithDelegate:(NSObject<OpenGDPRCancellationDelegate> *)delegate withRequestID:(NSString *)requestID;
 
 @end
