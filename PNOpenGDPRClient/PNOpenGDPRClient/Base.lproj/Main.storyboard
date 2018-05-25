@@ -393,7 +393,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lLy-E3-tGu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Cie-98-Nws"/>
+                    <navigationItem key="navigationItem" title="Open GDPR Client" id="Cie-98-Nws"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyc-qe-xgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
