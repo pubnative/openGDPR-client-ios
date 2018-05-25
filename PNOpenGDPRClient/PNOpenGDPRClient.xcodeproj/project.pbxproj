@@ -16,7 +16,6 @@
 		5A78AEB020B8587400BA00BF /* OpenGDPRStatusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AEAF20B8587300BA00BF /* OpenGDPRStatusClient.m */; };
 		5A78AEB320B85B5600BA00BF /* OpenGDPRRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AEB220B85B5600BA00BF /* OpenGDPRRequestClient.m */; };
 		5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84490A20B6E54600132D32 /* AppDelegate.m */; };
-		5A84490E20B6E54600132D32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84490D20B6E54600132D32 /* ViewController.m */; };
 		5A84491120B6E54600132D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A84490F20B6E54600132D32 /* Main.storyboard */; };
 		5A84491320B6E54B00132D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84491220B6E54B00132D32 /* Assets.xcassets */; };
 		5A84491620B6E54B00132D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */; };
@@ -62,8 +61,6 @@
 		5A84490620B6E54600132D32 /* PNOpenGDPRClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNOpenGDPRClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A84490920B6E54600132D32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A84490A20B6E54600132D32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A84490C20B6E54600132D32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A84490D20B6E54600132D32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A84491020B6E54600132D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A84491220B6E54B00132D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A84491520B6E54B00132D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -192,14 +189,12 @@
 		5A84490820B6E54600132D32 /* PNOpenGDPRClient */ = {
 			isa = PBXGroup;
 			children = (
+				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A84490920B6E54600132D32 /* AppDelegate.h */,
 				5A84490A20B6E54600132D32 /* AppDelegate.m */,
-				5A84490C20B6E54600132D32 /* ViewController.h */,
-				5A84490D20B6E54600132D32 /* ViewController.m */,
-				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
-				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
+				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 				5A84491720B6E54B00132D32 /* Info.plist */,
 				5A84491820B6E54B00132D32 /* main.m */,
 			);
@@ -377,7 +372,6 @@
 				5A78AEA220B8206800BA00BF /* HttpRequest.m in Sources */,
 				5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */,
 				5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */,
-				5A84490E20B6E54600132D32 /* ViewController.m in Sources */,
 				5A78AEAD20B855EB00BA00BF /* OpenGDPRDiscoveryClient.m in Sources */,
 				5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */,
 				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
