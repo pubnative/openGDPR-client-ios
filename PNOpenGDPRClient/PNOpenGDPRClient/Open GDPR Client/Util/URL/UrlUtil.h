@@ -25,6 +25,6 @@
 
 @interface UrlUtil : NSObject
 
-+ (NSString *)createQueryStringFromModel:(OpenGDPRRequestModel *)model;
++ (NSData *)createPOSTBodyFromModel:(OpenGDPRRequestModel *)model;
 
 @end

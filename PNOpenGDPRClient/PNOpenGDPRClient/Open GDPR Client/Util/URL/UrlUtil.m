@@ -24,9 +24,34 @@
 
 @implementation UrlUtil
 
-+ (NSString *)createQueryStringFromModel:(OpenGDPRRequestModel *)model
++ (NSData *)createPOSTBodyFromModel:(OpenGDPRRequestModel *)model
 {
-    return nil;
+    NSMutableDictionary *dictionary = [NSMutableDictionary new];
+    if (model.subjectRequestID) {
+        [dictionary setObject:model.subjectRequestID forKey:@"subject_request_id"];
+    }
+    if (model.subjectRequestType) {
+        [dictionary setObject:model.subjectRequestID forKey:@"subject_request_type"];
+    }
+    if (model.subjectIdentities) {
+        [dictionary setObject:model.subjectRequestID forKey:@"subject_identities"];
+    }
+    if (model.submittedTime) {
+        [dictionary setObject:model.subjectRequestID forKey:@"submitted_time"];
+    }
+    if (model.apiVersion) {
+        [dictionary setObject:model.subjectRequestID forKey:@"api_version"];
+    }
+    if (model.statusCallbackUrls) {
+        [dictionary setObject:model.subjectRequestID forKey:@"status_callback_urls"];
+    }
+    if (model.extensions) {
+        [dictionary setObject:model.subjectRequestID forKey:@"extensions"];
+    }
+
+    NSError * error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
+    return jsonData;
 }
 
 @end
