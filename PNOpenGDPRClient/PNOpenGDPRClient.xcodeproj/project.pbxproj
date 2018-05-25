@@ -28,6 +28,10 @@
 		5A84494920B7031B00132D32 /* OpenGDPRRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494820B7031B00132D32 /* OpenGDPRRequestModel.m */; };
 		5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494B20B7070F00132D32 /* OpenGDPRResponseModel.m */; };
 		5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */; };
+		5A84495320B7186900132D32 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495220B7186900132D32 /* CryptoUtil.m */; };
+		5A84495B20B719D300132D32 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495A20B719D300132D32 /* DateUtil.m */; };
+		5A84495F20B71BA600132D32 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84495E20B71BA600132D32 /* Logger.m */; };
+		5A84496820B7234A00132D32 /* UrlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A84496720B7234A00132D32 /* UrlUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,15 @@
 		5A84494B20B7070F00132D32 /* OpenGDPRResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRResponseModel.m; sourceTree = "<group>"; };
 		5A84494D20B7092E00132D32 /* OpenGDPRErrorResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRErrorResponseModel.h; sourceTree = "<group>"; };
 		5A84494E20B7092E00132D32 /* OpenGDPRErrorResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRErrorResponseModel.m; sourceTree = "<group>"; };
+		5A84495120B7186900132D32 /* CryptoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoUtil.h; sourceTree = "<group>"; };
+		5A84495220B7186900132D32 /* CryptoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoUtil.m; sourceTree = "<group>"; };
+		5A84495920B719D300132D32 /* DateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		5A84495A20B719D300132D32 /* DateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		5A84495D20B71BA600132D32 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		5A84495E20B71BA600132D32 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRAPIResponseDelegate.h; sourceTree = "<group>"; };
+		5A84496620B7234A00132D32 /* UrlUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlUtil.h; sourceTree = "<group>"; };
+		5A84496720B7234A00132D32 /* UrlUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,9 +170,66 @@
 		5A84495020B714FB00132D32 /* Open GDPR Client */ = {
 			isa = PBXGroup;
 			children = (
+				5A84495520B7195800132D32 /* Util */,
 				5A84492520B6E82400132D32 /* Model */,
 			);
 			path = "Open GDPR Client";
+			sourceTree = "<group>";
+		};
+		5A84495420B7194A00132D32 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				5A84495120B7186900132D32 /* CryptoUtil.h */,
+				5A84495220B7186900132D32 /* CryptoUtil.m */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		5A84495520B7195800132D32 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5A84496020B71C2400132D32 /* Logger */,
+				5A84495420B7194A00132D32 /* Crypto */,
+				5A84495C20B719D900132D32 /* Date */,
+				5A84496420B71EF000132D32 /* API Response Delegate */,
+				5A84496920B7235000132D32 /* URL */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5A84495C20B719D900132D32 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				5A84495920B719D300132D32 /* DateUtil.h */,
+				5A84495A20B719D300132D32 /* DateUtil.m */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		5A84496020B71C2400132D32 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				5A84495D20B71BA600132D32 /* Logger.h */,
+				5A84495E20B71BA600132D32 /* Logger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		5A84496420B71EF000132D32 /* API Response Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5A84496520B71F7D00132D32 /* OpenGDPRAPIResponseDelegate.h */,
+			);
+			path = "API Response Delegate";
+			sourceTree = "<group>";
+		};
+		5A84496920B7235000132D32 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				5A84496620B7234A00132D32 /* UrlUtil.h */,
+				5A84496720B7234A00132D32 /* UrlUtil.m */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A84492E20B6ECBD00132D32 /* RequestType.m in Sources */,
+				5A84495B20B719D300132D32 /* DateUtil.m in Sources */,
 				5A84494320B6FF5500132D32 /* RequestIdentityModel.m in Sources */,
 				5A84494F20B7092E00132D32 /* OpenGDPRErrorResponseModel.m in Sources */,
 				5A84490E20B6E54600132D32 /* ViewController.m in Sources */,
 				5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */,
 				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
+				5A84495F20B71BA600132D32 /* Logger.m in Sources */,
 				5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */,
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,
 				5A84490B20B6E54600132D32 /* AppDelegate.m in Sources */,
@@ -246,8 +318,10 @@
 				5A84493D20B6FA8800132D32 /* ErrorModel.m in Sources */,
 				5A84494920B7031B00132D32 /* OpenGDPRRequestModel.m in Sources */,
 				5A84492820B6E95100132D32 /* IdentityFormat.m in Sources */,
+				5A84495320B7186900132D32 /* CryptoUtil.m in Sources */,
 				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
 				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
+				5A84496820B7234A00132D32 /* UrlUtil.m in Sources */,
 				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 				5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */,
 			);
