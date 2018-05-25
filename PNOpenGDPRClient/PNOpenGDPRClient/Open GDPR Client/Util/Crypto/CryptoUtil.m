@@ -55,4 +55,18 @@
     return output;
 }
 
++ (NSString *)sha256WithString:(NSString *)text
+{
+    const char *str = [text UTF8String];
+    unsigned char result[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256(str, (CC_LONG)strlen(str), result);
+    
+    NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
+    for(int i = 0; i<CC_SHA256_DIGEST_LENGTH; i++)
+    {
+        [output appendFormat:@"%02x",result[i]];
+    }
+    return output;
+}
+
 @end

@@ -32,7 +32,7 @@
     if (self) {
         self.requestModel = [[OpenGDPRRequestModel alloc] init];
         self.requestModel.subjectRequestID = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-        self.requestModel.apiVersion = @"0.1.4";
+        self.requestModel.apiVersion = @"1.0";
     }
     return self;
 }

@@ -26,5 +26,6 @@
 
 + (NSString *)md5WithString:(NSString *)text;
 + (NSString *)sha1WithString:(NSString *)text;
++ (NSString *)sha256WithString:(NSString *)text;
 
 @end
