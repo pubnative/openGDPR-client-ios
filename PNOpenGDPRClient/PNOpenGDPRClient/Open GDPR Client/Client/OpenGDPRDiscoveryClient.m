@@ -20,33 +20,31 @@
 //  THE SOFTWARE.
 //
 
-#import "OpenGDPRCancellationClient.h"
+#import "OpenGDPRDiscoveryClient.h"
 #import "HttpRequest.h"
 #import "Logger.h"
 #import "OpenGDPREndpoints.h"
 
-@interface OpenGDPRCancellationClient () <HttpRequestDelegate>
+@interface OpenGDPRDiscoveryClient () <HttpRequestDelegate>
 
-@property (nonatomic, weak) NSObject <OpenGDPRCancellationDelegate> *delegate;
+@property (nonatomic, weak) NSObject <OpenGDPRDiscoveryDelegate> *delegate;
 
 @end
 
-@implementation OpenGDPRCancellationClient
+@implementation OpenGDPRDiscoveryClient
 
-- (void)doCancellationRequestWithDelegate:(NSObject<OpenGDPRCancellationDelegate> *)delegate withRequestID:(NSString *)requestID
+- (void)fetchDiscoveryDataWithDelegate:(NSObject<OpenGDPRDiscoveryDelegate> *)delegate
 {
-    if (requestID == nil || requestID.length == 0) {
-        [self invokeDidFail:[NSError errorWithDomain:@"Invalid requestID" code:0 userInfo:nil]];
-    } else if (delegate == nil) {
-        [self invokeDidFail:[NSError errorWithDomain:@"Given delegate is nil and required, droping this call" code:0 userInfo:nil]];
-    } else {
+    if (delegate) {
         self.delegate = delegate;
-        NSString *url = [OpenGDPREndpoints cancellationEndpointWithRequestID:requestID];
-        [[HttpRequest alloc] startWithUrlString:url withMethod:@"DELETE" delegate:self];
+        NSString *url = [OpenGDPREndpoints discoveryEndpoint];
+        [[HttpRequest alloc] startWithUrlString:url withMethod:@"GET" delegate:self];
+    } else {
+        [self invokeDidFail:[NSError errorWithDomain:@"Given delegate is nil and required, droping this call" code:0 userInfo:nil]];
     }
 }
 
-- (void)invokeDidLoad:(CancellationResponseModel *)model
+- (void)invokeDidLoad:(DiscoveryResponseModel *)model
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (self.delegate && [self.delegate respondsToSelector:@selector(success:)]) {
@@ -76,7 +74,7 @@
         [self invokeDidFail:parseError];
         [Logger error:NSStringFromClass([self class]) withMessage:parseError.localizedDescription];
     } else {
-        CancellationResponseModel *response = [[CancellationResponseModel alloc] initWithDictionary:jsonDictonary];
+        DiscoveryResponseModel *response = [[DiscoveryResponseModel alloc] initWithDictionary:jsonDictonary];
         [self invokeDidLoad:response];
     }
 }
