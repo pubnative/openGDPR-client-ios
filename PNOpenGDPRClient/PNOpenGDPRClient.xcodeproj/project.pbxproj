@@ -144,6 +144,9 @@
 				5A509BCA20B8ACED0082410D /* RequestViewController.m */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
+				5A84491720B6E54B00132D32 /* Info.plist */,
+				5A84491820B6E54B00132D32 /* main.m */,
+				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 			);
 			path = "Open GDPR Client Demo";
 			sourceTree = "<group>";
@@ -222,9 +225,6 @@
 			children = (
 				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A509BCC20B8B7B00082410D /* Open GDPR Client Demo */,
-				5A84491220B6E54B00132D32 /* Assets.xcassets */,
-				5A84491720B6E54B00132D32 /* Info.plist */,
-				5A84491820B6E54B00132D32 /* main.m */,
 			);
 			path = PNOpenGDPRClient;
 			sourceTree = "<group>";
@@ -569,7 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = PNOpenGDPRClient/Info.plist;
+				INFOPLIST_FILE = "PNOpenGDPRClient/Open GDPR Client Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = PNOpenGDPRClient/Info.plist;
+				INFOPLIST_FILE = "PNOpenGDPRClient/Open GDPR Client Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
