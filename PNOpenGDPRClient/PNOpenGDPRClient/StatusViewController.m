@@ -20,18 +20,43 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "StatusResponseModel.h"
+#import "StatusViewController.h"
+#import "OpenGDPRStatusClient.h"
+#import "Logger.h"
 
-@protocol OpenGDPRStatusDelegate <NSObject>
+@interface StatusViewController () <OpenGDPRStatusDelegate>
 
-- (void)success:(StatusResponseModel *)model;
-- (void)fail:(NSError *)error;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
 @end
 
-@interface OpenGDPRStatusClient : NSObject
+@implementation StatusViewController
 
-- (void)fetchRequestStatusWithDelegate:(NSObject<OpenGDPRStatusDelegate> *)delegate withRequestID:(NSString *)requestID;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
 
+- (IBAction)checkStatus:(UIButton *)sender
+{
+    [self.textView setText:@" "];
+    OpenGDPRStatusClient *client = [[OpenGDPRStatusClient alloc] init];
+    [client fetchRequestStatusWithDelegate:self withRequestID:@"a7551968-d5d6-44b2-9831-815ac9017798"];
+    [self.loadingIndicator startAnimating];
+}
+
+#pragma mark OpenGDPRCancellationDelegate
+
+- (void)success:(StatusResponseModel *)model
+{
+    [self.textView setText:[NSString stringWithFormat:@"%@",model.dictionary]];
+    [self.loadingIndicator stopAnimating];
+}
+
+- (void)fail:(NSError *)error
+{
+    [Logger error:NSStringFromClass([self class]) withMessage:error.localizedDescription];
+    [self.loadingIndicator stopAnimating];
+}
 @end

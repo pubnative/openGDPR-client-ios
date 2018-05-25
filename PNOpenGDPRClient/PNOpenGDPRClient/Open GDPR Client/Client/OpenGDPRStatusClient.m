@@ -33,7 +33,7 @@
 
 @implementation OpenGDPRStatusClient
 
-- (void)fetchRequestWithDelegate:(NSObject<OpenGDPRStatusDelegate> *)delegate withRequestID:(NSString *)requestID
+- (void)fetchRequestStatusWithDelegate:(NSObject<OpenGDPRStatusDelegate> *)delegate withRequestID:(NSString *)requestID
 {
     if (requestID == nil || requestID.length == 0) {
         [self invokeDidFail:[NSError errorWithDomain:@"Invalid requestID" code:0 userInfo:nil]];

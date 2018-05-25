@@ -59,4 +59,5 @@
     [Logger error:NSStringFromClass([self class]) withMessage:error.localizedDescription];
     [self.loadingIndicator stopAnimating];
 }
+
 @end

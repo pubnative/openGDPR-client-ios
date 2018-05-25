@@ -20,18 +20,8 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "StatusResponseModel.h"
+#import <UIKit/UIKit.h>
 
-@protocol OpenGDPRStatusDelegate <NSObject>
-
-- (void)success:(StatusResponseModel *)model;
-- (void)fail:(NSError *)error;
-
-@end
-
-@interface OpenGDPRStatusClient : NSObject
-
-- (void)fetchRequestStatusWithDelegate:(NSObject<OpenGDPRStatusDelegate> *)delegate withRequestID:(NSString *)requestID;
+@interface StatusViewController : UIViewController
 
 @end
