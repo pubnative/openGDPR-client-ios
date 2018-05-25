@@ -23,6 +23,7 @@
 #import <AdSupport/AdSupport.h>
 #import "OpenGDPRRequest.h"
 #import "RequestType.h"
+#import "OpenGDPREndpoints.h"
 
 @implementation OpenGDPRRequest
 
@@ -32,7 +33,7 @@
     if (self) {
         self.requestModel = [[OpenGDPRRequestModel alloc] init];
         self.requestModel.subjectRequestID = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-        self.requestModel.apiVersion = @"1.0";
+        self.requestModel.apiVersion = [OpenGDPREndpoints apiVersion];
     }
     return self;
 }
