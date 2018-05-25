@@ -31,22 +31,22 @@
         [dictionary setObject:model.subjectRequestID forKey:@"subject_request_id"];
     }
     if (model.subjectRequestType) {
-        [dictionary setObject:model.subjectRequestID forKey:@"subject_request_type"];
+        [dictionary setObject:model.subjectRequestType forKey:@"subject_request_type"];
     }
     if (model.subjectIdentities) {
-        [dictionary setObject:model.subjectRequestID forKey:@"subject_identities"];
+        [dictionary setObject:model.subjectIdentities forKey:@"subject_identities"];
     }
     if (model.submittedTime) {
-        [dictionary setObject:model.subjectRequestID forKey:@"submitted_time"];
+        [dictionary setObject:model.submittedTime forKey:@"submitted_time"];
     }
     if (model.apiVersion) {
-        [dictionary setObject:model.subjectRequestID forKey:@"api_version"];
+        [dictionary setObject:model.apiVersion forKey:@"api_version"];
     }
     if (model.statusCallbackUrls) {
-        [dictionary setObject:model.subjectRequestID forKey:@"status_callback_urls"];
+        [dictionary setObject:model.statusCallbackUrls forKey:@"status_callback_urls"];
     }
     if (model.extensions) {
-        [dictionary setObject:model.subjectRequestID forKey:@"extensions"];
+        [dictionary setObject:model.extensions forKey:@"extensions"];
     }
 
     NSError * error = nil;

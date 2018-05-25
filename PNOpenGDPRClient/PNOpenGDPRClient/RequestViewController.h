@@ -20,44 +20,8 @@
 //  THE SOFTWARE.
 //
 
-#import "StatusViewController.h"
-#import "OpenGDPRStatusClient.h"
-#import "Logger.h"
+#import <UIKit/UIKit.h>
 
-@interface StatusViewController () <OpenGDPRStatusDelegate>
-
-@property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
-
-@end
-
-@implementation StatusViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (IBAction)checkStatus:(UIButton *)sender
-{
-    [self.textView setText:@" "];
-    OpenGDPRStatusClient *client = [[OpenGDPRStatusClient alloc] init];
-    [client fetchRequestStatusWithDelegate:self withRequestID:@"a7551968-d5d6-44b2-9831-815ac9017798"];
-    [self.loadingIndicator startAnimating];
-}
-
-#pragma mark OpenGDPRStatusDelegate
-
-- (void)success:(StatusResponseModel *)model
-{
-    [self.textView setText:[NSString stringWithFormat:@"%@",model.dictionary]];
-    [self.loadingIndicator stopAnimating];
-}
-
-- (void)fail:(NSError *)error
-{
-    [Logger error:NSStringFromClass([self class]) withMessage:error.localizedDescription];
-    [self.loadingIndicator stopAnimating];
-}
+@interface RequestViewController : UIViewController
 
 @end

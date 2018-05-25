@@ -35,4 +35,19 @@
     self.extensions = nil;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.subjectRequestID = @"";
+        self.subjectRequestType = @"";
+        self.subjectIdentities = [NSMutableArray new];
+        self.submittedTime = @"";
+        self.apiVersion = @"";
+        self.statusCallbackUrls = [NSMutableArray new];
+        self.extensions = @"";
+    }
+    return self;
+}
+
 @end

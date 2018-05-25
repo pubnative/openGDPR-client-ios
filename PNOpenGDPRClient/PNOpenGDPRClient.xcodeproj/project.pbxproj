@@ -10,6 +10,7 @@
 		5A509BC220B8A0EA0082410D /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */; };
 		5A509BC520B8A7930082410D /* CancellationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC420B8A7930082410D /* CancellationViewController.m */; };
 		5A509BC820B8A98C0082410D /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC720B8A98C0082410D /* StatusViewController.m */; };
+		5A509BCB20B8ACED0082410D /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BCA20B8ACED0082410D /* RequestViewController.m */; };
 		5A78AE9920B80ED000BA00BF /* OpenGDPRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */; };
 		5A78AE9D20B81C4500BA00BF /* GDPRClientReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9C20B81C4500BA00BF /* GDPRClientReachability.m */; };
 		5A78AEA220B8206800BA00BF /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AEA120B8206800BA00BF /* HttpRequest.m */; };
@@ -51,6 +52,8 @@
 		5A509BC420B8A7930082410D /* CancellationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancellationViewController.m; sourceTree = "<group>"; };
 		5A509BC620B8A98C0082410D /* StatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
 		5A509BC720B8A98C0082410D /* StatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		5A509BC920B8ACED0082410D /* RequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		5A509BCA20B8ACED0082410D /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		5A78AE9720B80ED000BA00BF /* OpenGDPRRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRRequest.h; sourceTree = "<group>"; };
 		5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRRequest.m; sourceTree = "<group>"; };
 		5A78AE9B20B81C4500BA00BF /* GDPRClientReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPRClientReachability.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				5A509BC420B8A7930082410D /* CancellationViewController.m */,
 				5A509BC620B8A98C0082410D /* StatusViewController.h */,
 				5A509BC720B8A98C0082410D /* StatusViewController.m */,
+				5A509BC920B8ACED0082410D /* RequestViewController.h */,
+				5A509BCA20B8ACED0082410D /* RequestViewController.m */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
@@ -411,6 +416,7 @@
 				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
 				5A84496820B7234A00132D32 /* UrlUtil.m in Sources */,
 				5A78AE9D20B81C4500BA00BF /* GDPRClientReachability.m in Sources */,
+				5A509BCB20B8ACED0082410D /* RequestViewController.m in Sources */,
 				5A78AE9920B80ED000BA00BF /* OpenGDPRRequest.m in Sources */,
 				5A84492B20B6EABB00132D32 /* IdentityType.m in Sources */,
 				5A84493420B6F01C00132D32 /* DiscoveryIdentityModel.m in Sources */,
