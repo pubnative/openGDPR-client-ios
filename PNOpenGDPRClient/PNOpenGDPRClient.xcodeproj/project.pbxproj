@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A509BC220B8A0EA0082410D /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */; };
 		5A78AE9920B80ED000BA00BF /* OpenGDPRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */; };
 		5A78AE9D20B81C4500BA00BF /* GDPRClientReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9C20B81C4500BA00BF /* GDPRClientReachability.m */; };
 		5A78AEA220B8206800BA00BF /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AEA120B8206800BA00BF /* HttpRequest.m */; };
@@ -42,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A509BC020B8A0EA0082410D /* DiscoveryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
 		5A78AE9720B80ED000BA00BF /* OpenGDPRRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRRequest.h; sourceTree = "<group>"; };
 		5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRRequest.m; sourceTree = "<group>"; };
 		5A78AE9B20B81C4500BA00BF /* GDPRClientReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPRClientReachability.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A84490920B6E54600132D32 /* AppDelegate.h */,
 				5A84490A20B6E54600132D32 /* AppDelegate.m */,
+				5A509BC020B8A0EA0082410D /* DiscoveryViewController.h */,
+				5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
@@ -376,6 +381,7 @@
 				5A84494C20B7070F00132D32 /* OpenGDPRResponseModel.m in Sources */,
 				5A84494620B7009F00132D32 /* StatusResponseModel.m in Sources */,
 				5A84491920B6E54B00132D32 /* main.m in Sources */,
+				5A509BC220B8A0EA0082410D /* DiscoveryViewController.m in Sources */,
 				5A84495F20B71BA600132D32 /* Logger.m in Sources */,
 				5A84494020B6FBBE00132D32 /* CancellationResponseModel.m in Sources */,
 				5A84492420B6E81D00132D32 /* BaseModel.m in Sources */,

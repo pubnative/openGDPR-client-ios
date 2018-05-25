@@ -14,7 +14,7 @@
         <!--Discovery-->
         <scene sceneID="974-9R-aIx">
             <objects>
-                <viewController title="Discovery" id="uRc-CK-nB8" sceneMemberID="viewController">
+                <viewController title="Discovery" id="uRc-CK-nB8" customClass="DiscoveryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CqU-8J-aJI"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ew-nl-Zsq"/>
@@ -32,31 +32,43 @@
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Fetch Discovery Info"/>
+                                <connections>
+                                    <action selector="fetchDiscoveryInfo:" destination="AL5-qA-2Hi" eventType="touchUpInside" id="OWV-Nn-MOd"/>
+                                    <action selector="fetchDiscoveryInfo:" destination="uRc-CK-nB8" eventType="touchUpInside" id="Qzh-nH-mGW"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-ml-MId">
-                                <rect key="frame" x="37.5" y="110" width="300" height="300"/>
+                                <rect key="frame" x="32" y="110" width="311" height="541"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="4cL-TV-hr5"/>
-                                    <constraint firstAttribute="height" constant="300" id="W1A-KZ-Vte"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9qC-di-S2e">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Sn0-ml-MId" firstAttribute="centerX" secondItem="Nnn-uc-aGL" secondAttribute="centerX" id="7fH-R3-a5P"/>
+                            <constraint firstItem="9qC-di-S2e" firstAttribute="centerY" secondItem="Nnn-uc-aGL" secondAttribute="centerY" id="2r3-dv-0G7"/>
+                            <constraint firstItem="Sn0-ml-MId" firstAttribute="leading" secondItem="Nnn-uc-aGL" secondAttribute="leadingMargin" constant="16" id="2uA-zA-UK8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Sn0-ml-MId" secondAttribute="bottom" constant="16" id="31f-jD-ogx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sn0-ml-MId" secondAttribute="trailing" constant="16" id="Af5-Ue-gY0"/>
                             <constraint firstItem="Io2-RS-tU2" firstAttribute="top" secondItem="CqU-8J-aJI" secondAttribute="bottom" constant="8" id="GOO-I1-rCi"/>
+                            <constraint firstItem="9qC-di-S2e" firstAttribute="centerX" secondItem="Nnn-uc-aGL" secondAttribute="centerX" id="RT1-sP-rxw"/>
                             <constraint firstItem="Io2-RS-tU2" firstAttribute="leading" secondItem="Nnn-uc-aGL" secondAttribute="leading" constant="16" id="SgE-sW-Cex"/>
                             <constraint firstItem="Sn0-ml-MId" firstAttribute="top" secondItem="Io2-RS-tU2" secondAttribute="bottom" constant="8" id="uSa-dr-cBb"/>
                             <constraint firstAttribute="trailing" secondItem="Io2-RS-tU2" secondAttribute="trailing" constant="16" id="yhN-Hl-sht"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ncP-uN-qGU"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="9qC-di-S2e" id="oxe-l3-JyK"/>
+                        <outlet property="textView" destination="Sn0-ml-MId" id="aBf-0Z-j24"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgU-3e-9N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AL5-qA-2Hi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3112.8000000000002" y="-1478.4107946026988"/>
         </scene>
@@ -112,8 +124,8 @@
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
-                                        <include reference="brJ-pS-3Pm"/>
                                         <exclude reference="FwB-57-i0S"/>
+                                        <include reference="brJ-pS-3Pm"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -141,8 +153,8 @@
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <include reference="hCs-4D-pBT"/>
-                                        <include reference="zmX-mo-kZu"/>
                                         <exclude reference="q9e-qe-4nA"/>
+                                        <include reference="zmX-mo-kZu"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular">
@@ -175,8 +187,8 @@
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
-                                        <include reference="zhj-fD-z2j"/>
                                         <exclude reference="wsd-n4-7mG"/>
+                                        <include reference="zhj-fD-z2j"/>
                                     </mask>
                                 </variation>
                             </button>
