@@ -142,6 +142,8 @@
 				5A509BC720B8A98C0082410D /* StatusViewController.m */,
 				5A509BC920B8ACED0082410D /* RequestViewController.h */,
 				5A509BCA20B8ACED0082410D /* RequestViewController.m */,
+				5A84490F20B6E54600132D32 /* Main.storyboard */,
+				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
 			);
 			path = "Open GDPR Client Demo";
 			sourceTree = "<group>";
@@ -220,8 +222,6 @@
 			children = (
 				5A84495020B714FB00132D32 /* Open GDPR Client */,
 				5A509BCC20B8B7B00082410D /* Open GDPR Client Demo */,
-				5A84490F20B6E54600132D32 /* Main.storyboard */,
-				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 				5A84491720B6E54B00132D32 /* Info.plist */,
 				5A84491820B6E54B00132D32 /* main.m */,
