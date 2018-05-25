@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A509BC220B8A0EA0082410D /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */; };
+		5A509BC520B8A7930082410D /* CancellationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A509BC420B8A7930082410D /* CancellationViewController.m */; };
 		5A78AE9920B80ED000BA00BF /* OpenGDPRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */; };
 		5A78AE9D20B81C4500BA00BF /* GDPRClientReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AE9C20B81C4500BA00BF /* GDPRClientReachability.m */; };
 		5A78AEA220B8206800BA00BF /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A78AEA120B8206800BA00BF /* HttpRequest.m */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		5A509BC020B8A0EA0082410D /* DiscoveryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
 		5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		5A509BC320B8A7930082410D /* CancellationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancellationViewController.h; sourceTree = "<group>"; };
+		5A509BC420B8A7930082410D /* CancellationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancellationViewController.m; sourceTree = "<group>"; };
 		5A78AE9720B80ED000BA00BF /* OpenGDPRRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRRequest.h; sourceTree = "<group>"; };
 		5A78AE9820B80ED000BA00BF /* OpenGDPRRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRRequest.m; sourceTree = "<group>"; };
 		5A78AE9B20B81C4500BA00BF /* GDPRClientReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPRClientReachability.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				5A84490A20B6E54600132D32 /* AppDelegate.m */,
 				5A509BC020B8A0EA0082410D /* DiscoveryViewController.h */,
 				5A509BC120B8A0EA0082410D /* DiscoveryViewController.m */,
+				5A509BC320B8A7930082410D /* CancellationViewController.h */,
+				5A509BC420B8A7930082410D /* CancellationViewController.m */,
 				5A84490F20B6E54600132D32 /* Main.storyboard */,
 				5A84491420B6E54B00132D32 /* LaunchScreen.storyboard */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
@@ -396,6 +401,7 @@
 				5A84495320B7186900132D32 /* CryptoUtil.m in Sources */,
 				5A84493120B6ED9400132D32 /* OpenGDPRStatus.m in Sources */,
 				5A78AEB320B85B5600BA00BF /* OpenGDPRRequestClient.m in Sources */,
+				5A509BC520B8A7930082410D /* CancellationViewController.m in Sources */,
 				5A84493720B6F22400132D32 /* DiscoveryResponseModel.m in Sources */,
 				5A84496820B7234A00132D32 /* UrlUtil.m in Sources */,
 				5A78AE9D20B81C4500BA00BF /* GDPRClientReachability.m in Sources */,

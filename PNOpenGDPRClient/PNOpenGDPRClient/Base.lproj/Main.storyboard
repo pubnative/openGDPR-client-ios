@@ -482,7 +482,7 @@
         <!--Cancellation-->
         <scene sceneID="lFU-MF-gYL">
             <objects>
-                <viewController title="Cancellation" id="9Kb-Vf-edw" userLabel="Cancellation" sceneMemberID="viewController">
+                <viewController title="Cancellation" id="9Kb-Vf-edw" userLabel="Cancellation" customClass="CancellationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pgG-cV-ee9"/>
                         <viewControllerLayoutGuide type="bottom" id="eZ3-6F-jXf"/>
@@ -500,29 +500,40 @@
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Cancel Request"/>
+                                <connections>
+                                    <action selector="cancelRequest:" destination="9Kb-Vf-edw" eventType="touchUpInside" id="KIJ-hF-YPY"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="49m-D8-2EC">
-                                <rect key="frame" x="37.5" y="110" width="300" height="300"/>
+                                <rect key="frame" x="32" y="110" width="311" height="541"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="8W9-WD-kTn"/>
-                                    <constraint firstAttribute="height" constant="300" id="kKH-3b-YZN"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Rv6-vl-i00">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NXv-9z-KbV" firstAttribute="top" secondItem="pgG-cV-ee9" secondAttribute="bottom" constant="8" id="5vm-eD-7gk"/>
+                            <constraint firstItem="49m-D8-2EC" firstAttribute="leading" secondItem="03I-Ns-V2m" secondAttribute="leadingMargin" constant="16" id="G8O-E8-q8v"/>
                             <constraint firstItem="49m-D8-2EC" firstAttribute="centerX" secondItem="03I-Ns-V2m" secondAttribute="centerX" id="HHv-jL-dWE"/>
                             <constraint firstItem="NXv-9z-KbV" firstAttribute="leading" secondItem="03I-Ns-V2m" secondAttribute="leading" constant="16" id="JLS-gh-FH8"/>
                             <constraint firstAttribute="trailing" secondItem="NXv-9z-KbV" secondAttribute="trailing" constant="16" id="Mwa-EZ-LoV"/>
+                            <constraint firstItem="Rv6-vl-i00" firstAttribute="centerY" secondItem="03I-Ns-V2m" secondAttribute="centerY" id="RvJ-9q-YU1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="49m-D8-2EC" secondAttribute="bottom" constant="16" id="ZSW-X6-aQq"/>
+                            <constraint firstItem="Rv6-vl-i00" firstAttribute="centerX" secondItem="03I-Ns-V2m" secondAttribute="centerX" id="mNv-4n-fku"/>
                             <constraint firstItem="49m-D8-2EC" firstAttribute="top" secondItem="NXv-9z-KbV" secondAttribute="bottom" constant="8" id="xUc-fI-26m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="49m-D8-2EC" secondAttribute="trailing" constant="16" id="y23-Sx-DWO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9ta-7e-f2q"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="Rv6-vl-i00" id="ulz-AP-oEh"/>
+                        <outlet property="textView" destination="49m-D8-2EC" id="mKv-gr-fkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfT-dg-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
