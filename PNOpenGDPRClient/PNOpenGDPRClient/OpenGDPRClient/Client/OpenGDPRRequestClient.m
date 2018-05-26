@@ -52,7 +52,7 @@
         self.request = request;
         [self.request setSubmittedTime:[DateUtil RFC3339DateStringWithDate:[NSDate date]]];
         NSString *url = [OpenGDPREndpoints requestEndpoint];
-        NSDictionary *headerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"application/x-www-form-urlencoded",@"Content-Type", nil];
+        NSDictionary *headerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"application/json",@"Content-Type",@"application/json",@"Accept", nil];
         HttpRequest *request = [[HttpRequest alloc] init];
         [request setBody:[UrlUtil createPOSTBodyFromModel:self.request.requestModel]];
         [request setHeader:headerDictionary];

@@ -21,6 +21,7 @@
 //
 
 #import "UrlUtil.h"
+#import "RequestIdentityModel.h"
 
 @implementation UrlUtil
 
@@ -34,7 +35,11 @@
         [dictionary setObject:model.subjectRequestType forKey:@"subject_request_type"];
     }
     if (model.subjectIdentities) {
-        [dictionary setObject:model.subjectIdentities forKey:@"subject_identities"];
+        NSMutableArray * identities = [NSMutableArray array];
+        for (RequestIdentityModel *identity in model.subjectIdentities) {
+            [identities addObject:[UrlUtil dictionaryFromIdentity:identity]];
+        }
+        [dictionary setObject:identities forKey:@"subject_identities"];
     }
     if (model.submittedTime) {
         [dictionary setObject:model.submittedTime forKey:@"submitted_time"];
@@ -52,6 +57,11 @@
     NSError * error = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
     return jsonData;
+}
+
++ (NSDictionary *)dictionaryFromIdentity:(RequestIdentityModel *)identity
+{
+    return [NSDictionary dictionaryWithObjectsAndKeys:identity.identityValue,@"identity_value",identity.identityFormat, @"identity_format",identity.identityType, @"identity_type",nil];
 }
 
 @end
