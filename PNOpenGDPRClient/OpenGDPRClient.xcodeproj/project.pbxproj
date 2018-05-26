@@ -70,7 +70,7 @@
 		5A78AEAF20B8587300BA00BF /* OpenGDPRStatusClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRStatusClient.m; sourceTree = "<group>"; };
 		5A78AEB120B85B5600BA00BF /* OpenGDPRRequestClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGDPRRequestClient.h; sourceTree = "<group>"; };
 		5A78AEB220B85B5600BA00BF /* OpenGDPRRequestClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGDPRRequestClient.m; sourceTree = "<group>"; };
-		5A84490620B6E54600132D32 /* PNOpenGDPRClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNOpenGDPRClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A84490620B6E54600132D32 /* OpenGDPRClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGDPRClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A84490920B6E54600132D32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A84490A20B6E54600132D32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A84491020B6E54600132D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		5A8448FD20B6E54600132D32 = {
 			isa = PBXGroup;
 			children = (
-				5A84490820B6E54600132D32 /* PNOpenGDPRClient */,
+				5A84490820B6E54600132D32 /* OpenGDPRClient */,
 				5A84490720B6E54600132D32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -215,18 +215,18 @@
 		5A84490720B6E54600132D32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A84490620B6E54600132D32 /* PNOpenGDPRClient.app */,
+				5A84490620B6E54600132D32 /* OpenGDPRClient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A84490820B6E54600132D32 /* PNOpenGDPRClient */ = {
+		5A84490820B6E54600132D32 /* OpenGDPRClient */ = {
 			isa = PBXGroup;
 			children = (
-				5A84495020B714FB00132D32 /* OpenGDPRClient */,
+				5A84495020B714FB00132D32 /* OpenGDPRAPIClient */,
 				5A509BCC20B8B7B00082410D /* OpenGDPRClientDemo */,
 			);
-			path = PNOpenGDPRClient;
+			path = OpenGDPRClient;
 			sourceTree = "<group>";
 		};
 		5A84492520B6E82400132D32 /* Model */ = {
@@ -266,7 +266,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5A84495020B714FB00132D32 /* OpenGDPRClient */ = {
+		5A84495020B714FB00132D32 /* OpenGDPRAPIClient */ = {
 			isa = PBXGroup;
 			children = (
 				5A78AE9F20B81D0300BA00BF /* Network */,
@@ -275,7 +275,7 @@
 				5A78AE9A20B80ED600BA00BF /* Request */,
 				5A78AEA720B846BD00BA00BF /* Client */,
 			);
-			path = OpenGDPRClient;
+			path = OpenGDPRAPIClient;
 			sourceTree = "<group>";
 		};
 		5A84495420B7194A00132D32 /* Crypto */ = {
@@ -328,9 +328,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A84490520B6E54600132D32 /* PNOpenGDPRClient */ = {
+		5A84490520B6E54600132D32 /* OpenGDPRClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A84491C20B6E54B00132D32 /* Build configuration list for PBXNativeTarget "PNOpenGDPRClient" */;
+			buildConfigurationList = 5A84491C20B6E54B00132D32 /* Build configuration list for PBXNativeTarget "OpenGDPRClient" */;
 			buildPhases = (
 				5A84490220B6E54600132D32 /* Sources */,
 				5A84490320B6E54600132D32 /* Frameworks */,
@@ -340,9 +340,9 @@
 			);
 			dependencies = (
 			);
-			name = PNOpenGDPRClient;
+			name = OpenGDPRClient;
 			productName = PNOpenGDPRClient;
-			productReference = 5A84490620B6E54600132D32 /* PNOpenGDPRClient.app */;
+			productReference = 5A84490620B6E54600132D32 /* OpenGDPRClient.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -359,7 +359,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A84490120B6E54600132D32 /* Build configuration list for PBXProject "PNOpenGDPRClient" */;
+			buildConfigurationList = 5A84490120B6E54600132D32 /* Build configuration list for PBXProject "OpenGDPRClient" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -372,7 +372,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A84490520B6E54600132D32 /* PNOpenGDPRClient */,
+				5A84490520B6E54600132D32 /* OpenGDPRClient */,
 			);
 		};
 /* End PBXProject section */
@@ -569,7 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = PNOpenGDPRClient/OpenGDPRClientDemo/Info.plist;
+				INFOPLIST_FILE = OpenGDPRClient/OpenGDPRClientDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = PNOpenGDPRClient/OpenGDPRClientDemo/Info.plist;
+				INFOPLIST_FILE = OpenGDPRClient/OpenGDPRClientDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +600,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A84490120B6E54600132D32 /* Build configuration list for PBXProject "PNOpenGDPRClient" */ = {
+		5A84490120B6E54600132D32 /* Build configuration list for PBXProject "OpenGDPRClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A84491A20B6E54B00132D32 /* Debug */,
@@ -609,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A84491C20B6E54B00132D32 /* Build configuration list for PBXNativeTarget "PNOpenGDPRClient" */ = {
+		5A84491C20B6E54B00132D32 /* Build configuration list for PBXNativeTarget "OpenGDPRClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A84491D20B6E54B00132D32 /* Debug */,
