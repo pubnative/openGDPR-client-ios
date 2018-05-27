@@ -182,7 +182,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A509BCC20B8B7B00082410D /* OpenGDPRClientDemo */ = {
+		5A509BCC20B8B7B00082410D /* OpenGDPRClientObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
 				5A84490920B6E54600132D32 /* AppDelegate.h */,
@@ -201,7 +201,7 @@
 				5A84491820B6E54B00132D32 /* main.m */,
 				5A84491220B6E54B00132D32 /* Assets.xcassets */,
 			);
-			path = OpenGDPRClientDemo;
+			path = OpenGDPRClientObjCDemo;
 			sourceTree = "<group>";
 		};
 		5A78AE9A20B80ED600BA00BF /* Request */ = {
@@ -278,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				5A84495020B714FB00132D32 /* OpenGDPRAPIClient */,
-				5A509BCC20B8B7B00082410D /* OpenGDPRClientDemo */,
+				5A509BCC20B8B7B00082410D /* OpenGDPRClientObjCDemo */,
 				5AC3471120BB238700EF7D8B /* OpenGDPRClientSwiftDemo */,
 			);
 			path = OpenGDPRClient;
@@ -729,7 +729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = OpenGDPRClient/OpenGDPRClientDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenGDPRClient/OpenGDPRClientObjCDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,7 +746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6V7N93E53;
-				INFOPLIST_FILE = OpenGDPRClient/OpenGDPRClientDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenGDPRClient/OpenGDPRClientObjCDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
