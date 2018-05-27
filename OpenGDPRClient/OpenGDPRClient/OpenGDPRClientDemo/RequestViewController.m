@@ -115,6 +115,8 @@
     [request addIdentity:identity1];
     [request addIdentity:identity2];
     [request setType:self.requestType];
+    // Optional
+    // [request setRequestID:@"YOUR UUID HERE"];
     
     OpenGDPRRequestClient *client = [[OpenGDPRRequestClient alloc] init];
     [client doRequestWithDelegate:self withRequest:request];
