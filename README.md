@@ -1,4 +1,4 @@
-![](https://github.com/pubnative/openGDPR-client-ios/blob/development-demo/wiki-images/OpenGDPR%20Logo.png)
+![](https://github.com/pubnative/openGDPR-client-ios/blob/master/wiki-images/OpenGDPR%20Logo.png)
 
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
