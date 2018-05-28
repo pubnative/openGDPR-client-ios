@@ -1,0 +1,32 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import "HttpRequest.h"
+#import "GDPRClientReachability.h"
+#import "Logger.h"
+#import "CryptoUtil.h"
+#import "DateUtil.h"
+#import "UrlUtil.h"
+#import "BaseModel.h"
+#import "IdentityFormat.h"
+#import "IdentityType.h"
+#import "RequestType.h"
+#import "OpenGDPRStatus.h"
+#import "DiscoveryIdentityModel.h"
+#import "DiscoveryResponseModel.h"
+#import "ErrorItemModel.h"
+#import "ErrorModel.h"
+#import "CancellationResponseModel.h"
+#import "RequestIdentityModel.h"
+#import "StatusResponseModel.h"
+#import "OpenGDPRRequestModel.h"
+#import "OpenGDPRResponseModel.h"
+#import "OpenGDPRErrorResponseModel.h"
+#import "OpenGDPRRequest.h"
+#import "OpenGDPREndpoints.h"
+#import "OpenGDPRCancellationClient.h"
+#import "OpenGDPRDiscoveryClient.h"
+#import "OpenGDPRStatusClient.h"
+#import "OpenGDPRRequestClient.h"
+
