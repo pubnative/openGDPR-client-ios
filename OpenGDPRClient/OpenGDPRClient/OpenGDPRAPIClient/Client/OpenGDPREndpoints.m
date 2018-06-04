@@ -22,12 +22,12 @@
 
 #import "OpenGDPREndpoints.h"
 
-NSString *const kScheme = @"https://";
-NSString *const kBaseUrl = @"opengdpr-api.herokuapp.com/";
-NSString *const kAPIPath = @"api/";
+NSString *const kScheme = @"https";
+NSString *const kBaseUrl = @"opengdpr-api.herokuapp.com";
+NSString *const kAPIPath = @"api";
 NSString *const kAPIVersion = @"1.0";
-NSString *const kDiscovery = @"/discovery";
-NSString *const kRequests = @"/opengdpr_requests";
+NSString *const kDiscovery = @"discovery";
+NSString *const kRequests = @"opengdpr_requests";
 
 @implementation OpenGDPREndpoints
 
@@ -38,48 +38,37 @@ NSString *const kRequests = @"/opengdpr_requests";
 
 + (NSString *)discoveryEndpoint
 {
-    NSString *urlString = [[NSString alloc] init];
-    urlString = [urlString stringByAppendingString:kScheme];
-    urlString = [urlString stringByAppendingString:kBaseUrl];
-    urlString = [urlString stringByAppendingString:kAPIPath];
-    urlString = [urlString stringByAppendingString:kAPIVersion];
-    urlString = [urlString stringByAppendingString:kDiscovery];
-    return urlString;
+    NSURLComponents *components = [[NSURLComponents alloc] init];
+    components.scheme = kScheme;
+    components.host = kBaseUrl;
+    components.path = [NSString stringWithFormat:@"/%@/%@/%@",kAPIPath,kAPIVersion,kDiscovery];
+    return [NSString stringWithFormat:@"%@", components.URL];
 }
 
 + (NSString *)requestEndpoint
 {
-    NSString *urlString = [[NSString alloc] init];
-    urlString = [urlString stringByAppendingString:kScheme];
-    urlString = [urlString stringByAppendingString:kBaseUrl];
-    urlString = [urlString stringByAppendingString:kAPIPath];
-    urlString = [urlString stringByAppendingString:kAPIVersion];
-    urlString = [urlString stringByAppendingString:kRequests];
-    return urlString;
+    NSURLComponents *components = [[NSURLComponents alloc] init];
+    components.scheme = kScheme;
+    components.host = kBaseUrl;
+    components.path = [NSString stringWithFormat:@"/%@/%@/%@",kAPIPath,kAPIVersion,kRequests];
+    return [NSString stringWithFormat:@"%@", components.URL];
 }
 
 + (NSString *)statusUrlWithRequestID:(NSString *)requestID
 {
-    NSString *urlString = [[NSString alloc] init];
-    urlString = [urlString stringByAppendingString:kScheme];
-    urlString = [urlString stringByAppendingString:kBaseUrl];
-    urlString = [urlString stringByAppendingString:kAPIPath];
-    urlString = [urlString stringByAppendingString:kAPIVersion];
-    urlString = [urlString stringByAppendingString:kRequests];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"/%@",requestID]];
-    return urlString;
+    NSURLComponents *components = [[NSURLComponents alloc] init];
+    components.scheme = kScheme;
+    components.host = kBaseUrl;
+    components.path = [NSString stringWithFormat:@"/%@/%@/%@/%@",kAPIPath,kAPIVersion,kRequests,requestID];
+    return [NSString stringWithFormat:@"%@", components.URL];
 }
 
 + (NSString *)cancellationEndpointWithRequestID:(NSString *)requestID
-{
-    NSString *urlString = [[NSString alloc] init];
-    urlString = [urlString stringByAppendingString:kScheme];
-    urlString = [urlString stringByAppendingString:kBaseUrl];
-    urlString = [urlString stringByAppendingString:kAPIPath];
-    urlString = [urlString stringByAppendingString:kAPIVersion];
-    urlString = [urlString stringByAppendingString:kRequests];
-    urlString = [urlString stringByAppendingString:[NSString stringWithFormat:@"/%@",requestID]];
-    return urlString;
+{    NSURLComponents *components = [[NSURLComponents alloc] init];
+    components.scheme = kScheme;
+    components.host = kBaseUrl;
+    components.path = [NSString stringWithFormat:@"/%@/%@/%@/%@",kAPIPath,kAPIVersion,kRequests,requestID];
+    return [NSString stringWithFormat:@"%@", components.URL];
 }
 
 @end
